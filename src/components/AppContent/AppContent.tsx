@@ -40,7 +40,7 @@ export const AppContent = () => {
       </Title>
 
       <GanttComponent
-        dataSource={currentList}
+        dataSource={[currentList.chart]}
         taskFields={taskFields}
         allowPdfExport={true}
         toolbar={['PdfExport']}
