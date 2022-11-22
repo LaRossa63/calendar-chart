@@ -6,6 +6,7 @@ interface Props {
 }
 
 const ResetStyled = createGlobalStyle`
+
  * {
     padding: 0px;
     margin: 0px;
@@ -51,7 +52,6 @@ const ResetStyled = createGlobalStyle`
   }
   img,
   svg {
-    max-width: 100%;
     height: auto;
   }
   input,

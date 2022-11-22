@@ -1,8 +1,10 @@
-import { Axios } from 'api';
-import { ResponseChartApi } from 'types/types';
+import { LinksApi, ResponseChartApi } from 'types/types';
 
 export const ChartService = {
   async getChart(): Promise<ResponseChartApi> {
-    return Axios.get('');
+    const response = await fetch(LinksApi.BASE_URL);
+    const chart = await response.json();
+
+    return chart;
   },
 };
